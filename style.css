@@ -10,7 +10,7 @@
 
 body {
     min-height: 100vh;
-    background: hsl(221, 100%, 96%);
+    background: hsl(0, 0%, 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +23,7 @@ main .container {
     width: 100%;
     background: hsl(0, 0%, 100%);
     border-radius: 20px;
+    box-shadow: 7px 8px 15px 0px hsl(221, 100%, 96%);
 }
 
 .container > div {
@@ -33,7 +34,7 @@ main .container {
 }
 
 .container .result-summary {
-    background: linear-gradient(10deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
     align-items: center;
     border-radius: 20px;
 }
@@ -92,8 +93,9 @@ main .container {
 
 .score-info p {
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 0.87rem;
     line-height: 1.4rem;
+    font-weight: 400;
 }
 
 .container .result-des {
