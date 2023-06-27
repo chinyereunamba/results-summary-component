@@ -11,16 +11,10 @@
 body{
   min-height: 100vh;
   background: hsl(221, 100%, 96%);
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* main{
-  width : 80%;
-  margin : 1rem auto;
-
-} */
 
 main .container{
   display: flex;
@@ -42,8 +36,6 @@ main .container{
   background: linear-gradient(10deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
     align-items: center;  
     border-radius: 20px;
-
-
 }
 
 .container .result-summary, .container .result-des{
@@ -117,7 +109,6 @@ main .container{
   height: calc(100% - 3rem);
   margin: 1.5rem 0;
 }
-
 .result-des .result-property .property{
   padding: 1rem;
   width: 100%;
@@ -153,9 +144,44 @@ main .container{
   color: hsl(224, 30%, 27%);
 }
 
-.property .button button{
+.button{
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+
+.button button{
   padding: 0.8rem 1rem;
   border-radius: 20px;
   border: none;
   width: 100%;
+  color: hsl(0, 0%, 100%);
+  background: hsl(224, 30%, 27%);
+  font-size: 18px;
+}
+
+.button button:hover {
+    background: linear-gradient(6deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+
+}
+
+@media (max-width: 425px){
+  body{
+    width: 100vw;
+  }
+  .container{
+    flex-direction: column;
+    border-radius: 0;
+    width: 100%;
+  }
+  
+  .result-summary{
+    border-radius: 0 ;
+    width: 100%;
+  }
+  
+  .result-summary .score{
+    width: 170px;
+    height: 170px;
+  }
 }
